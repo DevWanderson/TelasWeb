@@ -1,17 +1,22 @@
-.body{
+.body {
     align-items: center;
     display: flex;
     justify-content: center;
     background-color: rgb(255, 250, 240);
-
+    left: 50%;
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);
 }
 
-.form{
+.form {
+    align-items: center;
+    margin-top: 50px;
+    font-size: 30px;
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 20px;
-
 }
