@@ -1,47 +1,45 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Formulário de Login e Registro com HTML5 e CSS3</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
+	<title>Tela de Cadastro</title>
+	<h1 class= "titulo"></h1>
+	<link rel="stylesheet" type="text/css" href="style.css">
 <body>
-  <div class="container" >
-    <a class="links" id="paracadastro"></a>
-    <a class="links" id="paralogin"></a>
-     
-    <div class="content"> 
-<!--FORMULÁRIO DE CADASTRO-->
-      <div id="cadastro">
-        <form method="post" action=""> 
-          <h1>Cadastro</h1> 
-           
-          <p> 
-            <label for="nome_cad">Seu nome</label>
-            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
-          </p>
-           
-          <p> 
-            <label for="email_cad">Seu e-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
-          </p>
-           
-          <p> 
-            <label for="senha_cad">Sua senha</label>
-            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
-          </p>
-           
-          <p> 
-            <input type="submit" value="Cadastrar"/> 
-          </p>
-           
-          <p class="link">  
-            Já tem conta?
-            <a href="#paralogin"> Ir para Login </a>
-          </p>
-        </form>
-      </div>
-    </div>
-  </div>  
+<form class="cadastro">
+	<h3 class="title-cadastrar">CADASTRO</h3>
+<table class="dados">
+	<tr>
+		<td>Matricula</td>
+		<td><input type= "text" name="matricula" value=""></td>
+	</tr>
+	<tr>
+		<td>Nome</td>
+		<td><input type= "text" name="nome" value=""></td>
+	</tr>
+	<tr>
+		<td>Sexo</td>
+		 <div>
+         <td><input type= "checkbox" name="masculino" id="masculino" value="masculino"/>
+		 <label for="masculino">Masculino</label>
+		 <input type="checkbox" name="feminino" id="feminino" value="feminino" /> 
+            <label for="feminino">Feminino</label>
+		 </td>
+		 </div>
+		 </tr>
+		 
+		 <tr>
+		      <td>Data Nascimento</td>
+         <td><input type="date" name="data nascimento" /></td>
+    </tr>
+	<tr>
+		<td>CPF</td>
+		<td><input type= "text" name="cpf" value=""></td>
+	</tr>
+	  <tr>
+       <td><input type="submit" value="Novo" /></td>
+       <td><input type="submit" value="Salvar" /></td>
+    </tr>
+</table>
+</form>
 </body>
 </html>
