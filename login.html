@@ -15,11 +15,12 @@
       <a class="links" id="paralogin"></a>
     <div class="form">      
       <!--FORMULÁRIO DE LOGIN-->
-      <div id="login">
+      <div>
+        <img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/ffffff/external-User-essential-collection-bearicons-glyph-bearicons.png" id="usericon"/>
         <form> 
           <h1>User Login</h1>
           <div id="campos">
-            <p> 
+            <p>
               <input id="username" name="login" required="required" type="text" placeholder="Username"/>
             </p>
             
@@ -28,18 +29,17 @@
             </label>
           </div>
 
-          <div id="info">
-            
-            <p id="manterlogado">
-              <input type="checkbox" name="manterlogado" value="" /> 
-              <label for="manterlogado">Manter-me logado</label>
+          <div class="info">
+            <p id="remember">
+              <input type="checkbox" name="remember"/> 
+              <label for="remember">Manter-me logado</label>
             </p>
-            <p>
-              <a href="rememberme"  id="remember">Esqueceu a Senha?</a>
+            <p id="forgot">
+              <a href="/forgot">Esqueceu a Senha?</a>
             </p>
           </div>
 
-            <input type="button" value="Login" id="button"/> 
+            <input type="button" value="Login" class="button"/> 
            
         </form>
       </div>
