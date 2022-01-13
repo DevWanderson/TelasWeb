@@ -19,26 +19,28 @@
       <div id="login">
         <form> 
           <h1>User Login</h1>
-          <p> 
-            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="Username"/>
-          </p>
+          <div id="campos">
+            <p> 
+              <input id="username" name="login" required="required" type="text" placeholder="Username"/>
+            </p>
             
-          <label for="senha">
-            <input id="senha" name="senha" required="required" type="password" placeholder="Password" /> 
-          </label>
-           
-          <p> 
-            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
-            <label for="manterlogado">Manter-me logado</label>
-          </p>
-           
-          <p> 
-            <a href="rememberme">Esqueceu a Senha?</a>
-          </p>
+            <label for="senha">
+              <input id="senha" name="senha" required="required" type="password" placeholder="Password" /> 
+            </label>
+          </div>
 
-          <p> 
+          <div id="info">
+            
+            <p id="manterlogado">
+              <input type="checkbox" name="manterlogado" value="" /> 
+              <label for="manterlogado">Manter-me logado</label>
+            </p>
+            <p>
+              <a href="rememberme"  id="remember">Esqueceu a Senha?</a>
+            </p>
+          </div>
+
             <input type="button" value="Logar" /> 
-          </p>
            
         </form>
       </div>

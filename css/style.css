@@ -5,20 +5,19 @@
     background-color: rgb(255, 255, 255);
     left: 50%;
     position: absolute;
-    top: 30%;
+    top: 40%;
     transform: translate(-50%, -50%);
 }
 
 .form {
     background-color: #c2824d;
-    margin-top: 50px;
     font-size: 30px;
     border: 1px solid #dddddd;
     border-radius: 10px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
-    padding: 20px;
-    
+    padding: 20px 50px 30px 50px;
+
 }
 
 .login {
@@ -30,4 +29,30 @@
     font-size: 50px;
     text-transform: uppercase;
     font-weight: lighter;
+    text-align: center;
 }
+
+input#username {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-color: #dddddd;
+    border-radius: 5px;
+}
+
+input#senha {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-color: #dddddd;
+    border-radius: 5px
+}
+
+.label {
+    font-size: 20px;
+}
+
+#info{
+    font-size: 15px;
+}
+
