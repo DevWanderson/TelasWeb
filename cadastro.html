@@ -2,16 +2,24 @@
 <html>
 <head>
 	<title>Tela de Cadastro</title>
-	<h1 class= "titulo"></h1>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+	</style>
 <body class="body">
-<div class= "cadastro">
-	
-	<form class="form">
-		<h3 class="title-cadastrar">CADASTRO</h3>
-	<table class="dados">
-		<tr>
-			<td>Matricula</td>
+	<div class= "container">
+	<!--FORMULÁRIO DE CADASTRO-->
+		<div class="form">
+
+			<img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/ffffff/external-User-essential-collection-bearicons-glyph-bearicons.png" id="usericon"/>
+
+			<h1 class="titulo">Cadastro</h1>
+
+			<form>
+				<div>
+				<table class="dados">
+				<tr>
+					<td>Matricula</td>
 			<td><input type= "text" name="matricula" value=""></td>
 		</tr>
 		<tr>
@@ -38,11 +46,12 @@
 			<td><input type= "text" name="cpf" value=""></td>
 		</tr>
 		<tr>
-       		<td><input type="submit" value="Novo" /></td>
-       		<td><input type="submit" value="Salvar" /></td>
+       		<input type="submit" value="Novo" />
+ 			<input type="submit" value="Salvar" /></td>
     	</tr>
+			</table>
+		</form>
+		</div>
 	</div>
-</table>
-</form>
 </body>
 </html>
