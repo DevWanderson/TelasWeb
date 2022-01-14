@@ -10,40 +10,33 @@
 </head>
 
 <body class="body">
-  <div class="login" >
-      <a class="links" id="paracadastro"></a>
-      <a class="links" id="paralogin"></a>
-    <div class="form">      
+    <div class="container">      
       <!--FORMULÁRIO DE LOGIN-->
-      <div>
+      <div class="form">
         <img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/ffffff/external-User-essential-collection-bearicons-glyph-bearicons.png" id="usericon"/>
-        <form> 
-          <h1>User Login</h1>
-          <div id="campos">
-            <p>
-              <input id="username" name="login" required="required" type="text" placeholder="Username"/>
-            </p>
-            
-            <label>
-              <input id="senha" name="senha" required="required" type="password" placeholder="Password" /> 
-            </label>
-          </div>
 
-          <div class="info">
-            <p id="remember">
+        <h1 class="titulo">User Login</h1>
+
+        <form> 
+            <div class="campos">
+                <input id="username" name="login" required="required" type="text" placeholder="Username"/>
+
+<!--Se removo essa tag, ela quebra o estilo, mesmo estando incompleta. Pq isso acontece?-->
+            
+              <input id="senha" name="senha" required="required" type="password" placeholder="Password" /> 
+            </div>
+
+            <div class="info">
               <input type="checkbox" name="remember"/> 
               <label for="remember">Manter-me logado</label>
-            </p>
-            <p id="forgot">
-              <a href="/forgot">Esqueceu a Senha?</a>
-            </p>
-          </div>
 
-            <input type="button" value="Login" class="button"/> 
+              <a id="forgot" href="forgot"><em>Esqueceu a Senha?</em></a>
+            </div>
+
+              <input type="button" value="Login" class="button"/> 
            
         </form>
-      </div>
-	</div> 
-</div>
+	    </div>
+    </div> 
 </body>
 </html>
