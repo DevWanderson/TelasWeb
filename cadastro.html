@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8"/>
 	<title>Tela de Cadastro</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style>
@@ -8,7 +9,7 @@
 	</style>
 <body class="body">
 	<div class= "container">
-	<!--FORMULÁRIO DE CADASTRO-->
+		<!--FORMULÁRIO DE CADASTRO-->
 		<div class="form">
 
 			<img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/ffffff/external-User-essential-collection-bearicons-glyph-bearicons.png" id="usericon"/>
@@ -16,41 +17,25 @@
 			<h1 class="titulo">Cadastro</h1>
 
 			<form>
-				<div class="campos">
-				<table class="dados">
-				<tr>
-					<td>Matricula</td>
-			<td><input type= "text" name="matricula" value=""></td>
-		</tr>
-		<tr>
-			<td>Nome</td>
-			<td><input type= "text" name="nome" value=""></td>
-		</tr>
-		<tr>
-			<td>Sexo</td>
-			 <div>
-				<td><input type= "checkbox" name="masculino" id="masculino" value="masculino"/>
-					<label for="masculino">Masculino</label>
-			 		<input type="checkbox" name="feminino" id="feminino" value="feminino" /> 
-        	    	<label for="feminino">Feminino</label>
-		 		</td>
-		 	</div>
-		</tr>
-		 
-		<tr>
-		    	<td>Data Nascimento</td>
-        	<td><input type="date" name="data nascimento" /></td>
-    	</tr>
-		<tr>
-			<td>CPF</td>
-			<td><input type= "text" name="cpf" value=""></td>
-		</tr>
-		<tr>
-       		<input type="submit" value="Novo" />
- 			<input type="submit" value="Salvar" /></td>
-    	</tr>
-			</table>
-		</form>
+				<formgroup class="campos">
+					<input type= "text" name="nome" placeholder="Nome"></td>
+					<input type= "email" name="email" placeholder="exemplo@gmail.com">
+					<input type= "text" name="cpf" placeholder="CPF"/>
+					<input type="date" name="data nascimento" />
+					
+				</formgroup>
+
+				<!--<div class="info">
+						<label id="sexo">Sexo:</label>
+						
+							<input type= "checkbox" name="masculino" id="masculino" value="masculino"/>
+							<label for="masculino"> Masculino</label>
+
+			 				<input type="checkbox" name="feminino" id="feminino" value="feminino" /> 
+        	    			<label for="feminino">Feminino</label>
+		 		</div>-->
+				<input id="btnCadastro" type="button" value="Salvar" class="button"/>
+			</form>
 		</div>
 	</div>
 </body>
