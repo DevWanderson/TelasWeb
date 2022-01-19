@@ -18,23 +18,32 @@
         <h1 class="titulo">Login</h1>
 
         <form> 
-            <formgroup class="campos">
+          <formgroup class="campos">
                 <input id="username" name="login" required="required" type="text" placeholder="Username"/>
 
 <!--Se removo essa tag, ela quebra o estilo, mesmo estando incompleta. Pq isso acontece? </p>-->
             
               <input id="senha" name="senha" required="required" type="password" placeholder="Password" /> 
-            </formgroup>
+          </formgroup>
 
-            <formgroup class="info">
-                <input type="checkbox" name="remember" id="box"/> 
-                <label for="remember">Manter-me logado</label>
+          <formgroup class="info">
+            <input type="checkbox" name="remember" id="box"/> 
+              <label for="remember">Manter-me logado</label>
 
               <a id="forgot" href="forgot"><em>Esqueceu a Senha?</em></a>
-            </formgroup>
+          </formgroup>
 
               <input type="button" value="Login" class="button"/>
-           
+              <br/>
+
+          <formgroup id="register">
+              <label>Não tem uma conta?</label>
+
+                <br/>
+                
+              <a href="cadastro.html"><em>Cadastre-se</em></a>
+          </formgroup>
+
         </form>
 	    </div>
     </div> 

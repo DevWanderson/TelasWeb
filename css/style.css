@@ -101,7 +101,10 @@ input#senha {
 a {
     text-decoration: none;
     color: white;
+}
 
+#register {
+    font-size: 15px;
 }
 
 .button {
@@ -122,4 +125,6 @@ a {
     transition: 400ms;
     background-color: darkorange;
 }
+
+.button:oncli
 
