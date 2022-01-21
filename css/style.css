@@ -75,19 +75,8 @@ input#senha {
     color: white;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
-    padding: 10px 0 10px 0;
-    margin-bottom: 10px;
-}
-
-#sexo {
-    font-size: 20px;
-    padding: 0;
-    margin: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: left;
-    color: #e3e3e3;
-    font-family: 'Montserrat', sans-serif;
+    padding: 20px 0 10px 0;
+    margin-bottom: 30px;
 }
 
 #box {
@@ -101,10 +90,11 @@ input#senha {
 a {
     text-decoration: none;
     color: white;
+    font-size: 15px;
 }
 
 #register {
-    font-size: 15px;
+    padding-bottom: 60px;
 }
 
 .button {
@@ -115,9 +105,11 @@ a {
     border: none;
     border-radius: 7px;
     text-transform: uppercase;
+    align-items: center;
     font-size: 25px;
     opacity: 1;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .button:hover {
@@ -125,6 +117,3 @@ a {
     transition: 400ms;
     background-color: darkorange;
 }
-
-.button:oncli
-
