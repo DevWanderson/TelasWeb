@@ -1,4 +1,4 @@
-# Formulário de login
+# Formulário de Login
 Criando telas de login e cadastro em HTML + CSS + JavaScript.
 ## Desmonstração
 *Por criar*
