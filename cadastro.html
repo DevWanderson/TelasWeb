@@ -1,48 +1,59 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="pt-br">
+
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width"/>
 	<title>Cadastro</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 	</style>
+</head>
+
 <body class="body">
 	<div class= "container">
 		<!--FORMULÁRIO DE CADASTRO-->
 		<div class="form">
 
-			<img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/ffffff/external-User-essential-collection-bearicons-glyph-bearicons.png" id="usericon"/>
+			<img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/ffffff/external-User-essential-collection-bearicons-glyph-bearicons.png" id="usericon" alt="Icone Usuário"/>
 
 			<h1 class="titulo">Cadastro</h1>
 
-			<form>
-				<formgroup class="campos">
-					<input type= "text" name="nome" placeholder="Nome"></td>
-					<input type= "email" name="email" placeholder="exemplo@gmail.com">
-					<input type= "text" name="cpf" placeholder="CPF"/>
-					<input type="date" name="data nascimento" />
-					
-				</formgroup>
-				<!--<div class="info">
-						<label id="sexo">Sexo:</label>
-						
-							<input type= "checkbox" name="masculino" id="masculino" value="masculino"/>
-							<label for="masculino"> Masculino</label>
 
-			 				<input type="checkbox" name="feminino" id="feminino" value="feminino" /> 
-        	    			<label for="feminino">Feminino</label>
-		 		</div>-->
-				<input id="btnCadastro" type="button" value="Salvar" class="button"/>
+
+			<!--<script src="scriptCadastro.js"></script>-->
+			<form name="cadastro">
+				<formgroup class="campos">
+					<input id="name" name="nome" type= "text" placeholder="Nome">
+					<!--<input type= "email" id="email" name="email" placeholder="exemplo@gmail.com">
+					<input type= "text" id="cpf" name="cpf" placeholder="CPF"/>
+					<input type="date" id="dataNascimento" name="data nascimento" placeholder="00/00/0000"/>
+				-->
+				</formgroup>
+
+				<button  id="btnCadastro" type="submit" value="Salvar" class="button"> Salvar </button>
 				
 					<br/>
 
-				<formgroup class="info">
+				</form>
+				
 					<a href="login.html"><em>Acesse</em></a>
-				</formgroup>
-		
-			</form>
-		</div>
+
+		<script>
+			//get form by prop name
+			const form = document.forms.cadastro;
+
+			form.addEventListener('submit', (e) => {
+				e.preventDefault();
+
+			//get fields by prop name
+			const {nome} = form;
+			console.log(nome.value);
+			});
+		</script>
+
+			</div>
 	</div>
+	
 </body>
 </html>
