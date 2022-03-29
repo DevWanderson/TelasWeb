@@ -22,7 +22,7 @@
 
 
 			<!--<script src="scriptCadastro.js"></script>-->
-			<form name="cadastro">
+			<form id="cadastro">
 				<formgroup class="campos">
 					<input id="name" name="nome" type= "text" placeholder="Nome">
 					<input type= "email" id="email" name="email" placeholder="exemplo@gmail.com">
@@ -37,19 +37,6 @@
 				</form>
 				
 					<a href="login.html"><em>Acesse</em></a>
-
-		<script>
-			//get form by prop name
-			const form = document.forms.cadastro;
-
-			form.addEventListener('submit', (e) => {
-				e.preventDefault();
-
-			//get fields by prop name
-			const {nome, email, cpf, dataNascimento} = form;
-			console.log(nome.value, email.value, cpf.value, dataNascimento.value);
-			});
-		</script>
 
 			</div>
 	</div>

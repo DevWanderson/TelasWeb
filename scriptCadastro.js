@@ -1,36 +1,22 @@
-//Recebe dados do formulário
-function getDados(url){
-	let request = new XMLHttpRequest();
-	request.open("GET", url, false);
-	request.send();
-	return request.responseText;
+//conexão com banco mongo
+var mongoose = require ('mongoose');
+global.db = mongoose.connect('mongodb://')
 
-}
+//get form by prop name
+const form = document.forms.cadastro;
 
-function receberDados(){
-	console.log("Oi");
-	console.log("http://127.0.0.1:5500/");
-}
-
-
-
-
-
-
-
-//Envia dados para o banco
-function postDados(e){
+form.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-}
+//get fields by prop name
+const {nome, email, cpf, dataNascimento} = form;
+console.log(nome.value, email.value, cpf.value, dataNascimento.value);
+});
 
-/*
-function reqListener () {
-	console.log(this.responseText);
-  };
-  
-  var oReq = new XMLHttpRequest();
-  oReq.onload = reqListener;
-  oReq.open("get", "yourFile.txt", true);
-  oReq.send();
-  */
+//post method
+fetch('https://200.17.5.10/32', {
+	method: 'POST',
+	mode: 'cors'
+}).then(function(res))
+
+https://docs.microsoft.com/pt-br/learn/modules/build-web-api-nodejs-express/
