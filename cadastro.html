@@ -25,10 +25,9 @@
 			<form name="cadastro">
 				<formgroup class="campos">
 					<input id="name" name="nome" type= "text" placeholder="Nome">
-					<!--<input type= "email" id="email" name="email" placeholder="exemplo@gmail.com">
+					<input type= "email" id="email" name="email" placeholder="exemplo@gmail.com">
 					<input type= "text" id="cpf" name="cpf" placeholder="CPF"/>
-					<input type="date" id="dataNascimento" name="data nascimento" placeholder="00/00/0000"/>
-				-->
+					<input type="date" id="dataNascimento" name="dataNascimento" placeholder="00/00/0000"/>
 				</formgroup>
 
 				<button  id="btnCadastro" type="submit" value="Salvar" class="button"> Salvar </button>
@@ -47,8 +46,8 @@
 				e.preventDefault();
 
 			//get fields by prop name
-			const {nome} = form;
-			console.log(nome.value);
+			const {nome, email, cpf, dataNascimento} = form;
+			console.log(nome.value, email.value, cpf.value, dataNascimento.value);
 			});
 		</script>
 
