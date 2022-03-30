@@ -1,0 +1,24 @@
+{
+  "name": "telasweb",
+  "version": "1.0.0",
+  "description": "Criando telas de login e cadastro em HTML + CSS + JavaScript.\r ## Desmonstração\r *Por criar*",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GwandersonL/TelasWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GwandersonL/TelasWeb/issues"
+  },
+  "homepage": "https://github.com/GwandersonL/TelasWeb#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {}
+}
